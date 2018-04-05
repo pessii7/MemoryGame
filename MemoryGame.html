@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Memory Game</title>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="MemoryGame.js"></script>
+    <link rel="stylesheet" type="text/css" href="MemoryGame.css">
+  </head>
+  <body>
+    <h1>Memory Game</h1>
+    <div class="content">
+      <div id="grid-container">
+        <img id="0" class="img" src="img11.png" alt="first picture">
+        <img id="1" class="img" src="img11.png" alt="second picture">
+        <img id="2" class="img" src="img11.png" alt="third picture">
+        <img id="3" class="img" src="img11.png" alt="fourth picture">
+        <img id="4" class="img" src="img11.png" alt="fifth picture">
+        <img id="5" class="img" src="img11.png" alt="sixth picture">
+        <img id="6" class="img" src="img11.png" alt="seventh picture">
+        <img id="7" class="img" src="img11.png" alt="eight picture">
+        <img id="8" class="img" src="img11.png" alt="nineth picture">
+        <img id="9" class="img" src="img11.png" alt="tenth picture">
+      </div>
+    </div>
+    <table>
+      <tr>
+        <td><h2 class="stats"> Strikes: </h2></td>
+        <td><h2 id="strikes"> 0 </h2></td>
+        <td><h2 class="stats"> Lives: </h2></td>
+        <td><h2 id="lives"> 4 </h2></td>
+      </tr>
+    </table>
+    <h2 id="timer">0</h2>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="popupText">Welcome to the Memory Game!</h2>
+        </div>
+        <div class="modal-body">
+          <p class="instructions">In this game you have five pairs of pictures that you have to remember.
+            If you pick a matching pair, your strikes will be increased by one. When you
+            have two strikes, you get one life.
+            If you pick unmatching pair, your lives will be decreased by
+            one and your strikes start from the beginning.
+          </p>
+          <p class="instructions">
+            You can win the game by picking all the matching pictures. You
+            lose the game if your lives drop to zero.
+          </p>
+          <p id="notice" class="instructions">
+            Clock is ticking! Try to get the best time!
+          </p>
+          <h2 id="time"> .</h2>
+          <button class="button" id="newGame">New game</button>
+          <button class="button" id="submitScore">Submit score</button>
+          <button class="button" id="save">Save game</button>
+          <button class="button" id="load">Load game</button>
+        </div>
+      </div>
+  </div>
+  </body>
+</html>

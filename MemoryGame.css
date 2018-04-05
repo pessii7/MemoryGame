@@ -1,0 +1,123 @@
+/*
+The css-stylesheet for the Memory game
+*/
+h1 {
+  font-family: Verdana;
+  color: #0066ff;
+  text-align: center;
+}
+img {
+  box-shadow: 5px 5px #bfbfbf;
+}
+.img {
+  margin: 5px 5px 5px 5px;
+  width: 120px;
+  height: 120px;
+}
+.stats {
+  font-family: Verdana;
+  color: #0066ff;
+}
+#strikes {
+  font-family: Verdana;
+  color: green;
+}
+#lives {
+  font-family: Verdana;
+  color: red;
+}
+#timer {
+  font-family: Verdana;
+  color: #ee42f4;
+  text-align: center;
+}
+
+.content {
+  width: 600px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#grid-container {
+  width: 600px;
+  height: 400px;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal {
+    display: block;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    text-align: center;
+    overflow: auto; /* Enable scroll if needed */
+    background: rgba(0,0,0,0.2);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.2s;
+}
+@-webkit-keyframes animatetop {
+    from {top:-400px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    font-family: Verdana;
+    margin: auto;
+    padding: 20px;
+    border-width: 0;
+    width: 650px;
+    height: 400px;
+    box-shadow: 0 20px 30px 0 rgba(0,0,0,0.2),0 20px 30px 0 rgba(0,0,0,0.19);
+}
+
+#popupText {
+  color: #0066ff;
+  font-size: 32px;
+}
+
+.instructions {
+  font-size: 20px;
+}
+
+#notice {
+  color: red;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#submitScore {
+  background-color: #008CBA;
+}
+
+#save {
+  background-color: #cccc00;
+}
+
+#load {
+  background-color: #00bfff;
+}
