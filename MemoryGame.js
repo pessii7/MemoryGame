@@ -41,7 +41,8 @@ $(document).ready( function() {
         "activeEventlisteners": activeEventlisteners
       }
     };
-    window.parent.postMessage(msg, "*");
+	obj = JSON.parse(JSON.stringify(msg));
+    window.parent.postMessage(obj, "*");
 
   });
 
