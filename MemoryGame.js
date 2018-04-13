@@ -11,6 +11,15 @@ $(document).ready( function() {
   var activeEventlisteners = [1,1,1,1,1,1,1,1,1,1];
   var timer;
   var modal = document.getElementById('myModal');
+  var message =  {
+    messageType: "SETTING",
+    options: {
+      "width": 800, //Integer
+      "height": 550 //Integer
+      }
+  };
+  window.parent.postMessage(msg, "*");
+
 
   $("#newGame").click( function () {
     loadstate = 0;
