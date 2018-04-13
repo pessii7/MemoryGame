@@ -11,7 +11,7 @@ $(document).ready( function() {
   var activeEventlisteners = [1,1,1,1,1,1,1,1,1,1];
   var timer;
   var modal = document.getElementById('myModal');
-  var message =  {
+  var msg =  {
     messageType: "SETTING",
     options: {
       "width": 800, //Integer
