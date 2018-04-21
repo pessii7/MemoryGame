@@ -157,7 +157,8 @@ $(document).ready( function() {
     openedPics.push(this);
     compPics.push(images[this.id].src);
     if(openedPics.length <= 2){
-      if(compPics[0] == compPics[1] && openedPics[0].id != openedPics[1].id){
+      if(compPics[0] == compPics[1] && compPics[0].id != compPics[1].id){
+
         match();
       }
       if(states[this.id] == 1){
