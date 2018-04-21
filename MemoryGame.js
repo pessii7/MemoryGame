@@ -169,13 +169,8 @@ $(document).ready( function() {
         states[this.id] = 1;
       }
     }
-    else{ &&
-      if(openedPics[0].src != "img11.png"){
-
-      }
-      else{
-        nomatch();
-      }
+    else{
+      nomatch();
     }
   }
 
