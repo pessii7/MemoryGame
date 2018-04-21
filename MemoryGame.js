@@ -157,8 +157,7 @@ $(document).ready( function() {
     openedPics.push(this);
     compPics.push(images[this.id].src);
     if(openedPics.length <= 2){
-      if(compPics[0] == compPics[1] && openedPics[0].id != openedPics[1].id &&
-      openedPics[0].src != "img11.png"){
+      if(compPics[0] == compPics[1] && openedPics[0].id != openedPics[1].id){
         match();
       }
       if(states[this.id] == 1){
@@ -170,8 +169,13 @@ $(document).ready( function() {
         states[this.id] = 1;
       }
     }
-    else{
-      nomatch();
+    else{ &&
+      if(openedPics[0].src != "img11.png"){
+
+      }
+      else{
+        nomatch();
+      }
     }
   }
 
